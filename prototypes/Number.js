@@ -8,7 +8,6 @@
  * @returns {boolean}
  */
 Number.prototype.between = function (a, b, inclusive = false) {
-    console.log(typeof this === 'number');
     if (typeof a !== 'number')
         throw new TypeError(`Number.prototype.between called on ${this} was expecting arguments of type number, but instead received ${typeof a}`);
     else if (typeof b !== 'number')
